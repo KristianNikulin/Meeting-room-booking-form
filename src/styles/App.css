@@ -1,0 +1,100 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
+body {
+    background-color: #0077ff;
+}
+
+.App {
+    text-align: center;
+    margin: 20px;
+}
+
+.reservation-form {
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    margin: 20px auto 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.reservation-form h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.reservation-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    text-align: left;
+}
+
+.reservation-form label:not(:first-child) {
+    margin-top: 15px;
+}
+
+.reservation-form select,
+.reservation-form input,
+.reservation-form textarea {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.reservation-form select:focus,
+.reservation-form input:focus,
+.reservation-form textarea:focus {
+    outline: none;
+    border: 1px solid #0077ff;
+}
+
+.reservation-form textarea {
+    text-align: left;
+    resize: none;
+    height: 100px;
+}
+
+.btn-container {
+    margin-top: 10px;
+}
+
+.btn-container button {
+    padding: 10px 20px;
+    background-color: #0077ff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.reservation-form .submit-btn:hover {
+    background-color: #0058bd;
+}
+
+.reservation-form .submit-btn {
+    margin-right: 10px;
+}
+
+.reservation-form .clear-btn {
+    background-color: #ccc;
+    color: #333;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.reservation-form .clear-btn:hover {
+    background-color: #b8b8b8;
+}
